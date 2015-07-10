@@ -32,7 +32,7 @@ When we start writing in HTML, what extension will we use? .html of course!
 
 ####HTML Page Structure (Hello, World!)
 In hello_world.html type the following:
-```HTML
+```
 <!DOCTYPE html>
 <title>My First Web Page</title>
 Hello, world!
