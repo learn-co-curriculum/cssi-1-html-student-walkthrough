@@ -20,20 +20,24 @@ All programs start out as text files. In order to let other programs (and humans
 
 When we start writing in HTML, what extension will we use? .html of course!
 
-#### Writing your First Webpage, Hello World (for Macs)
+### Writing your First Webpage, Hello World (for Macs)
+
+#### Getting Setup
 
 1. Cmd+space: opens your spotlight search.
 2. Type “Atom” and press enter
 3. Go to “file” and click “new file” to open a new tab
 4. Cmd+space Save as "hello_world.html"
 5. Save the file on your desktop 
-HTML Page Structure (Hello, World!)
-type the following:
+
+####HTML Page Structure (Hello, World!)
+In hello_world.html type the following:
 ```HTML
 <!DOCTYPE html>
 <title>My First Web Page</title>
 Hello, world!
 ```
+Save your file. Then open it in your browser. You're a web developer!
 
 #### Breaking Down Hello World
 Congratulations, you made a site! Obviously, there's a lot to do in order to make the site better. Let's get started by breaking down the different parts of what we wrote:
@@ -50,7 +54,7 @@ Note that this text doesn't appear on the body of the page, but in the title (wh
 
 This is body text. It appears in the body of the page, and we haven't done anything extra to it other than make it appear in the browser window.
 
-####Elements and Tags
+###Elements and Tags
 
 HTML is made up of building blocks called "elements". You've already seen one, the `<title>` element. Elements are typically made up of an "opening tag", a "closing tag", and some content in between. Here's another example:
 
@@ -164,7 +168,7 @@ br is the line break tag - it's like pressing enter on the keyboard.
 
 `<p> I need a little &nbsp; &nbsp; &nbsp; space </p>`
 
-###Tags Tags Tags
+###Types of Tags
 
 ####Headers
 Headers tell your visitors what your site is about. Usually, the main title of pages uses the `<h1>` tag.
@@ -265,7 +269,7 @@ See!
 ```
 Especially if you are doing something complicated, it's helpful to leave notes for yourself in your code. That way, if you came back a year later, or if someone else was reading your code and trying to understand it, they would have help!
 
-####Conclusion / So What?
+###Conclusion 
 * HTML allows us to define and label the content of our page. All modern browsers have implemented the same specification for how to display content written with html syntax. Now, you have control over how content is displayed, by naming the parts in the structure of your document.
 
 
@@ -276,6 +280,6 @@ Especially if you are doing something complicated, it's helpful to leave notes f
 #### Personal Profile Page
 Part 1: [HTML Personal Page Lab](https://github.com/learn-co-curriculum/cssi-1.4-html--personal-webpage-lab)
 
-## Resources
+#### Resources
 
 * [W3 Schools HTML](http://www.w3schools.com/html/default.asp)
