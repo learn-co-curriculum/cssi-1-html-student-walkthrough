@@ -225,7 +225,7 @@ And if you wanted to link to a file right next to your practice.html file on you
 Images use an <img> tag to embed an image in a webpage.
 `<img src="your_image_location">`
 
-This can be either an absolute path (good for “hot-linking” to images you find on the web) or a relative paths.
+This can be either an absolute path (good for "hot-linking" to images you find on the web) or a relative paths.
 
 ####Indentation
 HTML is not the easiest to read. It's designed to be clear for the browser to understand, but not always for humans. However, there are some ways to make it easier for you and others to read your code. Following the guidelines will help make your code easier to understand and debug.
