@@ -1,20 +1,11 @@
 ---
 tags: html css
 level:
-languages: html css
+languages: 
 resources:
 ---
 
-# CSSI Day 1 HTML CSS Student Walkthough
-
-## Objectives
-
-1. Understand and Use HTML to Create Websites
-2. Understand and Use CSS to Style Websites
-3. Create a Personal Profile Page
-
-
-### HTML
+# CSSI  HTML Student Walkthough
 
 HTML is the foundational technology for the Internet, every one of your favorite websites is HTML at its core. This walkthrough explains how to create an HTML site from scratch, and start creating a personal web page.
 
@@ -61,24 +52,28 @@ This is body text. It appears in the body of the page, and we haven't done anyth
 
 ####Elements and Tags
 
-HTML is made up of building blocks called "elements". You've already seen one, the <title> element. Elements are typically made up of an "opening tag", a "closing tag", and some content in between. Here's another example:
+HTML is made up of building blocks called "elements". You've already seen one, the `<title>` element. Elements are typically made up of an "opening tag", a "closing tag", and some content in between. Here's another example:
 
 `<h1>All About Honey Badgers</h1>`
 
-This is an h1 (or "heading-1") element. Note that the opening tag <h1> differs from the closing tag </h1> by a slash.
+This is an h1 (or "heading-1") element. Note that the opening tag `<h1>` differs from the closing tag `</h1>` by a slash.
 
 Generally, elements are written like
 `<tag>    .... CONTENT GOES HERE ....</tag>`
 
 They have an opening tag, then some content, and then a closing tag, which is a / and the tag name. 
 
-Elements can also have "attributes", which go inside the opening tag and give extra information about an element. For instance, on a link element, you might see this:
+There are a lot of different elements you can use in HTML. Check them out [here](http://www.w3schools.com/tags/)
 
-`<a href="http://www.google.com/">Search on Google</a>`
+Elements can also have "attributes", which go inside the opening tag and give extra information about an element. For instance, on an image element, you might see this:
 
-Attributes take the form name="value". Here, we're linking to Google using an 'a' ("anchor") element. 'href' ("hypertext reference") indicates the site that should load when the user clicks on the link.
+`<img src="documents/pictures/car.gif"  height="50" width="100">`
 
-Different elements can have different attributes. For instance, links have hrefs, since they have destinations. Most elements cannot have hrefs. All elements, however, can have class and id attributes to help differentiate them from other elements. 
+There is a height attribute with a value of 50 and a width attribute with a value of 100. There is also the src attribute which stands for source - this tells the page where to find the image of the car. Notice that attributes take the form name="value", where the value is in quotes!
+
+Different elements can have different attributes. For instance the img has height and width attriubtes, but it doesn't make sense for a `<p>` paragraph to have height and width attributes.  
+
+All elements, however, can have class and id attributes to help differentiate them from other elements. You will learn more about why class and ids are important in the next walkthough. For now take a quick look below.
 
 ```
 <h1 id="main_title">The Gettysburg Address</h1>
@@ -89,13 +84,13 @@ Different elements can have different attributes. For instance, links have hrefs
   <p class="about">Delivered by Abraham Lincoln </p>
 ```
 
-An `id` identifies a *unique* element on the page - there can only be one element that has that id.
+An `id` identifies a *unique* element on the page - there can only be one element that has that id. There is only one "main_title" of the speech. 
 
-The `class` lets us say that an element is a particular kind or group, used to identify and group elements that may occur more than once.
+The `class` lets us say that an element is a particular kind or group, used to identify and group elements that may occur more than once. There are a few places where we have paragraphs that are "about" the speech, so we can use the class attribute. 
 
 Some elements do not have closing tags; these are typically elements that have no textual content. 
 
-For example, the <img> element points to an image, but doesn't have any text inside.
+For example, the `<img>` element points to an image, but doesn't have any text inside.
 
 `<img src="kittens.jpg" width="80" height="100" alt="Photo of kittens playing">`
 
@@ -105,8 +100,6 @@ This tag has attributes (src, width, height, alt), but no closing tag.
 
 As you've seen, HTML elements just love to nest inside each other. This nesting is really useful for organizing the content of a page. On almost every page, there are pieces that belong to each other in a hierarchy. 
 
-For instance, a hierarchy of elements could be:
-Text belongs to paragraphs, paragraphs belong to sections, sections belong to an article. Items in a list belong to a list, and the list can be a list of links in a nav bar. Both the article and the nav bar belong to the body of the page. The body of the page, the title, and some meta-info all belong to the whole html document. 
 
 ```
 <html>
@@ -133,6 +126,8 @@ Text belongs to paragraphs, paragraphs belong to sections, sections belong to an
   </body>
 </html>
 ```
+In the code above, a hierarchy of elements could be:
+Text belongs to paragraphs, paragraphs belong to sections, sections belong to an article. Items in a list belong to a list, and the list can be a list of links in a nav bar. Both the article and the nav bar belong to the body of the page. The body of the page, the title, and some meta-info all belong to the whole html document. 
 
 It's helpful to think about what parts of the page belong to each other, or are inside of one another. Then the html looks less like meaningless characters, and more like a useful way of structuring our documents!
 
@@ -162,15 +157,17 @@ Why anyone would use the second one is beyond me, but there are lots of times wh
 It also forces us to use other ways to put whitespace into our pages, if we want it. We'll go in depth about styling and positioning when we cover CSS, but for now, there are two whitespace tricks to know. 
 
 br is the line break tag - it's like pressing enter on the keyboard. 
+
 `<p> I could use a <br> break</p>`
 
 &nbsp; is the html entity name for a no-break space. If you want to put extra spaces in between words, you can use it like this:
+
 `<p> I need a little &nbsp; &nbsp; &nbsp; space </p>`
 
 ###Tags Tags Tags
 
 ####Headers
-Headers tell your visitors what your site is about. Usually, the main title of pages uses the <h1> tag.
+Headers tell your visitors what your site is about. Usually, the main title of pages uses the `<h1>` tag.
 
 Netflix might use headers like this:
 
@@ -273,10 +270,12 @@ Especially if you are doing something complicated, it's helpful to leave notes f
 
 
 ####Hints and Hurdles
-* You need to know every tag - you need to know tag syntax - how to open and close tags, what at attribute is etc.  
-### Personal Profile Page
+* You do not need to know every tag - you need to know tag syntax: how to open and close tags and  how to use an attribute  
+* Don't worry too much about class and id attributes quite yet, you'll see them in CSS
+
+#### Personal Profile Page
 Part 1: [HTML Personal Page Lab](https://github.com/learn-co-curriculum/cssi-1.4-html--personal-webpage-lab)
 
 ## Resources
 
-* [Stack Exchange](http://www.stackexchange.com)
+* [W3 Schools HTML](http://www.w3schools.com/html/default.asp)
