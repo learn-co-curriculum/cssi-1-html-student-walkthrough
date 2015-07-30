@@ -1,9 +1,4 @@
----
-tags:
-level:
-languages:
-resources:
----
+
 
 # CSSI  HTML Student Walkthough
 
